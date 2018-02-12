@@ -1,0 +1,63 @@
+<main>
+  <button class="btn btn-primary">Hello</button>
+  <article>
+    <h1>Mediapalvelut ja käyttäjäkokemus, Bootstrap 4
+    </h1>
+    <h2>2/2018
+    </h2>
+    <h3>Adding Bootstrap to Angular project
+    </h3>
+    <ol>
+      <li>Add the Bootstrap 4 library to your project:
+        <code>npm install --save
+          bootstrap@next</code></li>
+      <li>Add the following line in file styles.scss:
+        <code>@import
+          "~bootstrap/dist/css/bootstrap.css";</code>
+      </li>
+      <li>Bootstrap JavaScript library is making use of jQuery and is
+        manipulating the DOM directly. For an Angular application any direct DOM
+        manipulations should be avoided and the complete control to update DOM
+        elements should be be given to the Angular framework. Use Bootstrap 4
+        Angular directives:
+        <code>npm install --save
+          @ng-bootstrap/ng-bootstrap</code>
+      </li>
+      <li>Having completed the installation the corresponding Angular module
+        NgbModule must be imported in app.module.ts
+
+      </li>
+      <li><a href="https://ng-bootstrap.github.io/#/home" rel="nofollow">ng-bootstrap
+        documentation</a></li>
+      <li>Customizing Bootstrap:
+        <ul>
+          <li>Create <code>_custom.scss</code> to assets folder</li>
+          <li>Modify styles.scss:
+            <pre><code>@import '~bootstrap/scss/functions', 'assets/custom';
+@import "~bootstrap/scss/bootstrap.scss";
+</code></pre>
+          </li>
+          <li>add ´Hello´ to one of your components (default color is blue)</li>
+          <li>Modify <code>_custom.scss</code> to change the primary color:
+            <pre><code>$primary: red;
+</code></pre>
+          </li>
+          <li>all variables are here: <code>node_modules/bootstrap/scss/_variables.scss</code>
+          </li>
+          <li><a
+              href="https://v4-alpha.getbootstrap.com/getting-started/options/"
+              rel="nofollow">Customize bootstrap</a></li>
+          <li><a
+              href="https://getbootstrap.com/docs/4.0/getting-started/theming/#sass-options"
+              rel="nofollow">Theming info</a></li>
+        </ul>
+      </li>
+    </ol>
+    <h2>Task
+    </h2>
+    <p>Make a new Angular project. Use Bootsrap to make a layout similar to <a
+        href="https://cdn.tutsplus.com/net/uploads/legacy/397_yourFirstdesign/images/2.jpg"
+        rel="nofollow">this</a>. Change the Bootstrap default colors of navbars,
+      buttons, backgrounds etc...</p>
+  </article>
+</main>
